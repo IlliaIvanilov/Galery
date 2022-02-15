@@ -64,7 +64,7 @@ namespace Galereya
 
 
             LeftBtn.Click += LeftBtn_Click;
-            LeftBtn.Text = "<<";
+            LeftBtn.Text = "<";
             LeftBtn.Location = new System.Drawing.Point(0, 400);
             LeftBtn.Font = new System.Drawing.Font("Time New Roman", 50, System.Drawing.FontStyle.Bold);
             LeftBtn.Size = new System.Drawing.Size(100, 100);
@@ -74,7 +74,7 @@ namespace Galereya
 
 
             RightBtn.Click += RightBtn_Click;
-            RightBtn.Text = ">>";
+            RightBtn.Text = ">";
             RightBtn.Location = new System.Drawing.Point(900, 400);
             RightBtn.Font = new System.Drawing.Font("Time New Roman", 50, System.Drawing.FontStyle.Bold);
             RightBtn.Size = new System.Drawing.Size(100, 100);
@@ -86,12 +86,12 @@ namespace Galereya
             delete.Text = "x";
             delete.Location = new System.Drawing.Point(10, 100);
             delete.Font = new System.Drawing.Font("Time New Roman", 50, System.Drawing.FontStyle.Bold);
-            delete.Size = new System.Drawing.Size(100, 100);
+            delete.Size = new System.Drawing.Size(60, 60);
             delete.BackColor = System.Drawing.Color.LightGray;
             this.Controls.Add(delete);
 
             picture.Location = new System.Drawing.Point(50, 50);
-            picture.Size = new System.Drawing.Size(700, 500);
+            picture.Size = new System.Drawing.Size(800, 500);
             picture.SizeMode = PictureBoxSizeMode.Zoom;
             this.Controls.Add(picture);
             SetImage(num);
@@ -112,7 +112,7 @@ namespace Galereya
             }
             else
             {
-                label.Text += " ";
+                label.Text += "Delete ";
             }
         }
 
@@ -185,7 +185,7 @@ namespace Galereya
             }
             catch
             {
-                label.Text = " ";
+                label.Text = "X ";
             }
         }
 
